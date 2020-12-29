@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/qc/.g8/.g8.iml" filepath="$PROJECT_DIR$/qc/.g8/.g8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qc/qc.iml" filepath="$PROJECT_DIR$/qc/qc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qc/target/scala-2.12/routes/routes.iml" filepath="$PROJECT_DIR$/qc/target/scala-2.12/routes/routes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qc/target/scala-2.12/twirl/twirl.iml" filepath="$PROJECT_DIR$/qc/target/scala-2.12/twirl/twirl.iml" />
+    </modules>
+  </component>
+</project>

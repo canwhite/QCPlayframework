@@ -1,0 +1,38 @@
+@* 如果有多个参数，括号内用逗号隔开  *@
+@(form: Form[UserForm.UserData])(implicit request: MessagesRequestHeader)
+
+<!DOCTYPE html>
+<html lang="en">
+<head><title>首页</title></head>
+<body>
+<br/>
+
+@*****************  GET *******************************@
+<form action="/doLogin">
+    <input name="userName" type="text" placeholder="User Name" />
+    <input name="password" type="password" placeholder="Password" />
+    <button type="submit">GET</button>
+</form>
+<br/>
+
+@*****************  POST1 *******************************@
+<form action="/doPostLogin1" method="post">
+    <input name="userName" type="text" placeholder="User Name" />
+    <input name="password" type="password" placeholder="Password" />
+    <button type="submit">POST1</button>
+</form>
+<br/>
+
+@*****************  POST2 *******************************@
+@helper.form(routes.ApplicationController.doPostLogin2()) {
+
+    @helper.CSRF.formField
+    @helper.inputText(form("userName"))
+    @helper.inputText(form("password"))
+
+    <button type="submit">POST2</button>
+}
+
+</body>
+
+</html>
